@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLT Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-container">
+            <header class="page-header">
+                <div class="tlt-logo">
+                    <img src="assets/theleadershipthread-full-white.png" alt="TLT Logo">
+                </div>
+                <div class="user-info-container">
+                    <div class="user-info">
+                        <div class="avatar">
+                            <img src="assets/avatar.png" alt="User Avatar">
+                        </div>
+                        <div class="user-details">
+                            <div class="user-name">John Doe</div>
+                            <div class="dropdown-icon">
+                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                    <path d="M1 0L5 4L9 0" stroke="#8E8E8E" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moonshot-logo">
+                        <img src="assets/moonshot-logo-wide.png" alt="Moonshot Logo">
+                    </div>
+                </div>
+            </header>
+            <div class="form-section">
+                <div class="form-content">
+                    <div class="form-header">
+                        <div class="form-header-container">
+                            <div class="form-header-content">
+                                <div class="form-title-container">
+                                    <div class="form-title">
+                                        <h1 class="form-title-text">Create Your Profile</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-content-wrapper">
+                        <div class="form-fields">
+                            <div class="basic-details-label">Your Name</div>
+                            <div class="name-fields">
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="input">
+                                                <div class="content">
+                                                    <input type="text" placeholder="First Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="input">
+                                                <div class="content">
+                                                    <input type="text" placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-fields">
+                            <div class="basic-details-label">Contact Details</div>
+                            <div class="name-fields">
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="input">
+                                                <div class="content">
+                                                    <input type="email" placeholder="Email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="input">
+                                                <div class="content">
+                                                    <input type="tel" placeholder="Mobile No">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-fields">
+                            <div class="basic-details-label">Select Primary Role:</div>
+                            <div class="name-fields">
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="label">Role</div>
+                                            <div class="input">
+                                                <div class="content">
+                                                    <div class="role-select-container">
+                                                        <select class="role-select" required>
+                                                            <option value="" disabled selected hidden>Select</option>
+                                                            <optgroup label="Specialist">
+                                                                <option value="owner">Owner</option>
+                                                                <option value="partner">Partner</option>
+                                                                <option value="associate">Associate</option>
+                                                            </optgroup>
+                                                            <optgroup label="Others">
+                                                                <option value="hygienist">Hygienist</option>
+                                                                <option value="practice-success-director">Practice Success Director</option>
+                                                                <option value="strategic-growth-partner">Strategic Growth Partner</option>
+                                                                <option value="treatment-consultant">Treatment Consultant</option>
+                                                                <option value="custom-role">Custom Role</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="chevron-down">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="label">Specialty Type</div>
+                                            <div class="input">
+                                                <div class="content">
+                                                    <div class="role-select-container">
+                                                        <select class="department-select" required>
+                                                            <option value="" disabled selected hidden>Select</option>
+                                                            <option value="periodontist">Periodontist</option>
+                                                            <option value="endodontist">Endodontist</option>
+                                                            <option value="oral-surgeon">Oral Surgeon</option>
+                                                            <option value="prosthodontist">Prosthodontist</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="chevron-down">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-fields">
+                            <div class="checkbox-container">
+                                <div class="checkbox">
+                                    <div class="checkbox-base">
+                                        <input type="checkbox" id="location-checkbox">
+                                        <label for="location-checkbox" class="label">Is this user a producer?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-fields">
+                            <div class="form-fields">
+                                <div class="basic-details-label">Select Location</div>
+                                <div class="name-fields">
+                                    <div class="input-field">
+                                        <div class="input-field-base">
+                                            <div class="input-with-label">
+                                                <div class="input">
+                                                    <div class="content">
+                                                        <div class="role-select-container">
+                                                            <select class="country-select" required>
+                                                                <option value="" disabled selected hidden>Select</option>
+                                                                <option value="us">United States</option>
+                                                                <option value="uk">United Kingdom</option>
+                                                                <option value="ca">Canada</option>
+                                                                <option value="au">Australia</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chevron-down">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-field">
+                                        <div class="input-field-base">
+                                            <div class="input-with-label">
+                                                <div class="input">
+                                                    <div class="content">
+                                                        <div class="role-select-container">
+                                                            <select class="city-select" required>
+                                                                <option value="" disabled selected hidden>Select</option>
+                                                                <option value="ny">New York</option>
+                                                                <option value="la">Los Angeles</option>
+                                                                <option value="ch">Chicago</option>
+                                                                <option value="sf">San Francisco</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chevron-down">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button class="primary-outline-button">
+                            <div class="button-base">
+                                <span>Cancel</span>
+                            </div>
+                        </button>
+                        <button class="primary-button">
+                            <div class="button-base">
+                                <span>Submit</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
