@@ -16,7 +16,7 @@
                 <div class="tlt-logo">
                     <img src="assets/theleadershipthread-full-white.png" alt="TLT Logo">
                 </div>
-                <div class="user-info-container">
+                <div class="header-right">
                     <div class="user-info">
                         <div class="avatar">
                             <img src="assets/avatar.png" alt="User Avatar">
@@ -30,11 +30,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="moonshot-logo">
-                        <img src="assets/moonshot-logo-wide.png" alt="Moonshot Logo">
-                    </div>
+                    <button class="burger-menu" aria-label="Open menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </header>
+            <div class="drawer-menu">
+                <div class="drawer-overlay"></div>
+                <div class="drawer-content">
+                    <div class="drawer-header">
+                        <div class="drawer-user-info">
+                            <div class="avatar">
+                                <img src="assets/avatar.png" alt="User Avatar">
+                            </div>
+                            <div class="user-details">
+                                <div class="user-name">John Doe</div>
+                            </div>
+                        </div>
+                        <button class="close-drawer" aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 6L6 18M6 6L18 18" stroke="#2B4150" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="drawer-nav">
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
             <div class="form-section">
                 <div class="form-content">
                     <div class="form-header">
@@ -248,5 +278,27 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const closeDrawer = document.querySelector('.close-drawer');
+            const drawerMenu = document.querySelector('.drawer-menu');
+            const drawerOverlay = document.querySelector('.drawer-overlay');
+
+            function openDrawer() {
+                drawerMenu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeDrawerMenu() {
+                drawerMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            burgerMenu.addEventListener('click', openDrawer);
+            closeDrawer.addEventListener('click', closeDrawerMenu);
+            drawerOverlay.addEventListener('click', closeDrawerMenu);
+        });
+    </script>
 </body>
 </html> 
