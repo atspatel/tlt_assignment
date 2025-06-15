@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="dropdown.css" />
     <link rel="stylesheet" href="roles-dropdown.css" />
+    <link rel="stylesheet" href="specialty-dropdown.css" />
 </head>
 
 <body>
@@ -153,7 +154,7 @@
                                             <div class="label">Role</div>
                                             <div class="content">
                                                 <div class="dropdown-wrapper dropdown roles-dropdown">
-                                                    <input type="checkbox" id="dropdown-check" class="dropdown-check" />
+                                                    <input type="checkbox" id="roles-dropdown-check" class="dropdown-check" />
 
                                                     <!-- Role selection radios -->
                                                     <input type="radio" name="role" id="select" value="" checked>
@@ -170,7 +171,7 @@
                                                     <input type="radio" name="role" id="custom" value="Custom Role">
 
                                                     <!-- Dropdown trigger -->
-                                                    <label class="dropdown-toggle input" for="dropdown-check">
+                                                    <label class="dropdown-toggle input" for="roles-dropdown-check">
                                                         <span class="selected"></span>
                                                     </label>
 
@@ -179,34 +180,34 @@
                                                         <div class="dropdown-header">Specialist</div>
                                                         <div class="dropdown-group">
                                                             <div class="dropdown-item"><label for="owner"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Owner</label>
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Owner</label>
                                                             </div>
                                                             <div class="dropdown-item"><label for="partner"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Partner</label>
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Partner</label>
                                                             </div>
                                                             <div class="dropdown-item"><label for="associate"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Associate</label>
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Associate</label>
                                                             </div>
                                                         </div>
 
                                                         <div class="dropdown-header">Others</div>
                                                         <div class="dropdown-group">
                                                             <div class="dropdown-item"><label for="hygienist"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Hygienist</label>
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Hygienist</label>
                                                             </div>
                                                             <div class="dropdown-item"><label for="psd"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Practice
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Practice
                                                                     Success
                                                                     Director</label></div>
                                                             <div class="dropdown-item"><label for="sgp"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Strategic
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Strategic
                                                                     Growth
                                                                     Partner</label></div>
                                                             <div class="dropdown-item"><label for="tc"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Treatment
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Treatment
                                                                     Consultant</label></div>
                                                             <div class="dropdown-item"><label for="custom"
-                                                                    onclick="document.getElementById('dropdown-check').checked = false">Custom
+                                                                    onclick="document.getElementById('roles-dropdown-check').checked = false">Custom
                                                                     Role</label>
                                                             </div>
                                                         </div>
@@ -220,23 +221,39 @@
                                     <div class="input-field-base">
                                         <div class="input-with-label">
                                             <div class="label">Specialty Type</div>
-                                            <div class="input">
-                                                <div class="content">
-                                                    <div class="select-container">
-                                                        <select class="select-dropdown" required>
-                                                            <option value="" disabled selected hidden>Select</option>
-                                                            <option value="periodontist">Periodontist</option>
-                                                            <option value="endodontist">Endodontist</option>
-                                                            <option value="oral-surgeon">Oral Surgeon</option>
-                                                            <option value="prosthodontist">Prosthodontist</option>
-                                                        </select>
+                                            <div class="content">
+                                                <div class="dropdown-wrapper dropdown specialty-dropdown">
+                                                    <input type="checkbox" id="specialty-dropdown-check" class="dropdown-check" />
+
+                                                    <!-- Specialty selection radios -->
+                                                    <input type="radio" name="specialty" id="select" value="" checked>
+                                                    <input type="radio" name="specialty" id="periodontist" value="periodontist">
+                                                    <input type="radio" name="specialty" id="endodontist" value="endodontist">
+                                                    <input type="radio" name="specialty" id="oral-surgeon" value="oral-surgeon">
+                                                    <input type="radio" name="specialty" id="prosthodontist" value="prosthodontist">
+
+                                                    <!-- Dropdown trigger -->
+                                                    <label class="dropdown-toggle input" for="specialty-dropdown-check">
+                                                        <span class="selected"></span>
+                                                    </label>
+
+                                                    <!-- Dropdown items -->
+                                                    <div class="dropdown-options">
+                                                        <div class="dropdown-group">
+                                                            <div class="dropdown-item"><label for="periodontist"
+                                                                    onclick="document.getElementById('specialty-dropdown-check').checked = false">Periodontist</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="endodontist"
+                                                                    onclick="document.getElementById('specialty-dropdown-check').checked = false">Endodontist</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="oral-surgeon"
+                                                                    onclick="document.getElementById('specialty-dropdown-check').checked = false">Oral Surgeon</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="prosthodontist"
+                                                                    onclick="document.getElementById('specialty-dropdown-check').checked = false">Prosthodontist</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="chevron-down">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -255,57 +272,55 @@
                             </div>
                         </div>
                         <div class="form-fields">
-                            <div class="form-fields">
-                                <div class="basic-details-label">Select Location</div>
-                                <div class="name-fields">
-                                    <div class="input-field">
-                                        <div class="input-field-base">
-                                            <div class="input-with-label">
-                                                <div class="input">
-                                                    <div class="content">
-                                                        <div class="select-container">
-                                                            <select class="select-dropdown" required>
-                                                                <option value="" disabled selected hidden>Select
-                                                                </option>
-                                                                <option value="us">United States</option>
-                                                                <option value="uk">United Kingdom</option>
-                                                                <option value="ca">Canada</option>
-                                                                <option value="au">Australia</option>
-                                                            </select>
-                                                        </div>
+                            <div class="basic-details-label">Select Location</div>
+                            <div class="name-fields">
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="input">
+                                                <div class="content">
+                                                    <div class="select-container">
+                                                        <select class="select-dropdown" required>
+                                                            <option value="" disabled selected hidden>Select
+                                                            </option>
+                                                            <option value="us">United States</option>
+                                                            <option value="uk">United Kingdom</option>
+                                                            <option value="ca">Canada</option>
+                                                            <option value="au">Australia</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="chevron-down">
-                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                            <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </div>
+                                                </div>
+                                                <div class="chevron-down">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="input-field">
-                                        <div class="input-field-base">
-                                            <div class="input-with-label">
-                                                <div class="input">
-                                                    <div class="content">
-                                                        <div class="select-container">
-                                                            <select class="select-dropdown" required>
-                                                                <option value="" disabled selected hidden>Select
-                                                                </option>
-                                                                <option value="ny">New York</option>
-                                                                <option value="la">Los Angeles</option>
-                                                                <option value="ch">Chicago</option>
-                                                                <option value="sf">San Francisco</option>
-                                                            </select>
-                                                        </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="input-field-base">
+                                        <div class="input-with-label">
+                                            <div class="input">
+                                                <div class="content">
+                                                    <div class="select-container">
+                                                        <select class="select-dropdown" required>
+                                                            <option value="" disabled selected hidden>Select
+                                                            </option>
+                                                            <option value="ny">New York</option>
+                                                            <option value="la">Los Angeles</option>
+                                                            <option value="ch">Chicago</option>
+                                                            <option value="sf">San Francisco</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="chevron-down">
-                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                            <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </div>
+                                                </div>
+                                                <div class="chevron-down">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>

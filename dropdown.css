@@ -96,7 +96,7 @@ body {
     color: #FFFFFF;
 }
 
-#select:checked~.dropdown-toggle .selected::before {
+#select:checked ~ .dropdown-toggle .selected::before {
     content: "Select";
-    color: #999999;
+    color: #8E8E8E;
 }

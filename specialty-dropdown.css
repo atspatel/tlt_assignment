@@ -1,0 +1,16 @@
+.specialty-dropdown #periodontist:checked ~ .dropdown-toggle .selected::before {
+    content: "Periodontist";
+}
+
+.specialty-dropdown #endodontist:checked ~ .dropdown-toggle .selected::before {
+    content: "Endodontist";
+}
+
+.specialty-dropdown #oral-surgeon:checked ~ .dropdown-toggle .selected::before {
+    content: "Oral Surgeon";
+}
+
+.specialty-dropdown #prosthodontist:checked ~ .dropdown-toggle .selected::before {
+    content: "Prosthodontist";
+} 
+
