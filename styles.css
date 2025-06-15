@@ -378,9 +378,7 @@ body {
     font-weight: 400;
 }
 
-.input input:focus,
 .input input:not(:placeholder-shown),
-.input select:focus,
 .input select:valid {
     color: #FFFFFF;
 }
@@ -404,7 +402,7 @@ body {
     height: 36px;
 }
 
-.role-select {
+.select-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -415,24 +413,24 @@ body {
     color: #999999;
 }
 
-.role-select option {
+.select-container option {
     color: white;
     background-color: #2B4150;
     padding: 8px;
     height: 36px;
 }
 
-.role-select option:first-child {
+.select-container option:first-child {
     color: #999999;
 }
 
-.role-select option:hover,
-.role-select option:checked {
+.select-container option:hover,
+.select-container option:checked {
     background-color: #465F6F;
     color: #999999;
 }
 
-.role-select-container {
+.select-container {
     width: 100%;
     height: 100%;
     display: flex;

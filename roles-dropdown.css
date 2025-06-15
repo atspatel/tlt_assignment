@@ -1,0 +1,31 @@
+.roles-dropdown #owner:checked ~ .dropdown-toggle .selected::before {
+    content: "Specialist (Owner)";
+}
+
+.roles-dropdown #partner:checked ~ .dropdown-toggle .selected::before {
+    content: "Specialist (Partner)";
+}
+
+.roles-dropdown #associate:checked ~ .dropdown-toggle .selected::before {
+    content: "Specialist (Associate)";
+}
+
+.roles-dropdown #hygienist:checked ~ .dropdown-toggle .selected::before {
+    content: "Others (Hygienist)";
+}
+
+.roles-dropdown #psd:checked ~ .dropdown-toggle .selected::before {
+    content: "Others (Practice Success Director)";
+}
+
+.roles-dropdown #sgp:checked ~ .dropdown-toggle .selected::before {
+    content: "Others (Strategic Growth Partner)";
+}
+
+.roles-dropdown #tc:checked ~ .dropdown-toggle .selected::before {
+    content: "Others (Treatment Consultant)";
+}
+
+.roles-dropdown #custom:checked ~ .dropdown-toggle .selected::before {
+    content: "Others (Custom Role)";
+} 

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+}
+
+
+.dropdown-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-toggle {
+    background-color: #2B4150;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-toggle::after {
+    content: "\f078";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background-color: #2B4150;
+    border: 1px solid rgba(222, 228, 234, 0.2);
+    border-radius: 8px;
+    box-shadow: -1px 21px 45px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.dropdown-check {
+    display: none;
+}
+
+.dropdown-check:checked ~ .dropdown-options {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 8px 16px;
+    color: #8E8E8E;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dropdown-group {
+    border-bottom: 1px solid #465F81;
+}
+
+.dropdown-item label {
+    display: block;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item label:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown input[type="radio"] {
+    display: none;
+}
+
+.dropdown-toggle .selected::before {
+    color: #FFFFFF;
+}
+
+#select:checked~.dropdown-toggle .selected::before {
+    content: "Select";
+    color: #999999;
+}
