@@ -1,0 +1,15 @@
+.country-dropdown #us:checked ~ .dropdown-toggle .selected::before {
+    content: "United States";
+}
+
+.country-dropdown #uk:checked ~ .dropdown-toggle .selected::before {
+    content: "United Kingdom";
+}
+
+.country-dropdown #ca:checked ~ .dropdown-toggle .selected::before {
+    content: "Canada";
+}
+
+.country-dropdown #au:checked ~ .dropdown-toggle .selected::before {
+    content: "Australia";
+} 

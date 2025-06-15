@@ -1,0 +1,15 @@
+.city-dropdown #ny:checked ~ .dropdown-toggle .selected::before {
+    content: "New York";
+}
+
+.city-dropdown #la:checked ~ .dropdown-toggle .selected::before {
+    content: "Los Angeles";
+}
+
+.city-dropdown #ch:checked ~ .dropdown-toggle .selected::before {
+    content: "Chicago";
+}
+
+.city-dropdown #sf:checked ~ .dropdown-toggle .selected::before {
+    content: "San Francisco";
+} 

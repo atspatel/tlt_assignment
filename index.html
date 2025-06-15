@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="dropdown.css" />
     <link rel="stylesheet" href="roles-dropdown.css" />
     <link rel="stylesheet" href="specialty-dropdown.css" />
+    <link rel="stylesheet" href="country-dropdown.css" />
+    <link rel="stylesheet" href="city-dropdown.css" />
 </head>
 
 <body>
@@ -154,7 +156,8 @@
                                             <div class="label">Role</div>
                                             <div class="content">
                                                 <div class="dropdown-wrapper dropdown roles-dropdown">
-                                                    <input type="checkbox" id="roles-dropdown-check" class="dropdown-check" />
+                                                    <input type="checkbox" id="roles-dropdown-check"
+                                                        class="dropdown-check" />
 
                                                     <!-- Role selection radios -->
                                                     <input type="radio" name="role" id="select" value="" checked>
@@ -223,14 +226,19 @@
                                             <div class="label">Specialty Type</div>
                                             <div class="content">
                                                 <div class="dropdown-wrapper dropdown specialty-dropdown">
-                                                    <input type="checkbox" id="specialty-dropdown-check" class="dropdown-check" />
+                                                    <input type="checkbox" id="specialty-dropdown-check"
+                                                        class="dropdown-check" />
 
                                                     <!-- Specialty selection radios -->
                                                     <input type="radio" name="specialty" id="select" value="" checked>
-                                                    <input type="radio" name="specialty" id="periodontist" value="periodontist">
-                                                    <input type="radio" name="specialty" id="endodontist" value="endodontist">
-                                                    <input type="radio" name="specialty" id="oral-surgeon" value="oral-surgeon">
-                                                    <input type="radio" name="specialty" id="prosthodontist" value="prosthodontist">
+                                                    <input type="radio" name="specialty" id="periodontist"
+                                                        value="periodontist">
+                                                    <input type="radio" name="specialty" id="endodontist"
+                                                        value="endodontist">
+                                                    <input type="radio" name="specialty" id="oral-surgeon"
+                                                        value="oral-surgeon">
+                                                    <input type="radio" name="specialty" id="prosthodontist"
+                                                        value="prosthodontist">
 
                                                     <!-- Dropdown trigger -->
                                                     <label class="dropdown-toggle input" for="specialty-dropdown-check">
@@ -247,7 +255,8 @@
                                                                     onclick="document.getElementById('specialty-dropdown-check').checked = false">Endodontist</label>
                                                             </div>
                                                             <div class="dropdown-item"><label for="oral-surgeon"
-                                                                    onclick="document.getElementById('specialty-dropdown-check').checked = false">Oral Surgeon</label>
+                                                                    onclick="document.getElementById('specialty-dropdown-check').checked = false">Oral
+                                                                    Surgeon</label>
                                                             </div>
                                                             <div class="dropdown-item"><label for="prosthodontist"
                                                                     onclick="document.getElementById('specialty-dropdown-check').checked = false">Prosthodontist</label>
@@ -277,24 +286,42 @@
                                 <div class="input-field">
                                     <div class="input-field-base">
                                         <div class="input-with-label">
-                                            <div class="input">
-                                                <div class="content">
-                                                    <div class="select-container">
-                                                        <select class="select-dropdown" required>
-                                                            <option value="" disabled selected hidden>Select
-                                                            </option>
-                                                            <option value="us">United States</option>
-                                                            <option value="uk">United Kingdom</option>
-                                                            <option value="ca">Canada</option>
-                                                            <option value="au">Australia</option>
-                                                        </select>
+                                            <div class="content">
+                                                <div class="dropdown-wrapper dropdown country-dropdown">
+                                                    <input type="checkbox" id="country-dropdown-check"
+                                                        class="dropdown-check" />
+
+                                                    <!-- Country selection radios -->
+                                                    <input type="radio" name="country" id="select" value="" checked>
+                                                    <input type="radio" name="country" id="us" value="us">
+                                                    <input type="radio" name="country" id="uk" value="uk">
+                                                    <input type="radio" name="country" id="ca" value="ca">
+                                                    <input type="radio" name="country" id="au" value="au">
+
+                                                    <!-- Dropdown trigger -->
+                                                    <label class="dropdown-toggle input" for="country-dropdown-check">
+                                                        <span class="selected"></span>
+                                                    </label>
+
+                                                    <!-- Dropdown items -->
+                                                    <div class="dropdown-options">
+                                                        <div class="dropdown-group">
+                                                            <div class="dropdown-item"><label for="us"
+                                                                    onclick="document.getElementById('country-dropdown-check').checked = false">United
+                                                                    States</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="uk"
+                                                                    onclick="document.getElementById('country-dropdown-check').checked = false">United
+                                                                    Kingdom</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="ca"
+                                                                    onclick="document.getElementById('country-dropdown-check').checked = false">Canada</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="au"
+                                                                    onclick="document.getElementById('country-dropdown-check').checked = false">Australia</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="chevron-down">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -303,24 +330,43 @@
                                 <div class="input-field">
                                     <div class="input-field-base">
                                         <div class="input-with-label">
-                                            <div class="input">
-                                                <div class="content">
-                                                    <div class="select-container">
-                                                        <select class="select-dropdown" required>
-                                                            <option value="" disabled selected hidden>Select
-                                                            </option>
-                                                            <option value="ny">New York</option>
-                                                            <option value="la">Los Angeles</option>
-                                                            <option value="ch">Chicago</option>
-                                                            <option value="sf">San Francisco</option>
-                                                        </select>
+                                            <div class="content">
+                                                <div class="dropdown-wrapper dropdown city-dropdown">
+                                                    <input type="checkbox" id="city-dropdown-check"
+                                                        class="dropdown-check" />
+
+                                                    <!-- City selection radios -->
+                                                    <input type="radio" name="city" id="select" value="" checked>
+                                                    <input type="radio" name="city" id="ny" value="ny">
+                                                    <input type="radio" name="city" id="la" value="la">
+                                                    <input type="radio" name="city" id="ch" value="ch">
+                                                    <input type="radio" name="city" id="sf" value="sf">
+
+                                                    <!-- Dropdown trigger -->
+                                                    <label class="dropdown-toggle input" for="city-dropdown-check">
+                                                        <span class="selected"></span>
+                                                    </label>
+
+                                                    <!-- Dropdown items -->
+                                                    <div class="dropdown-options">
+                                                        <div class="dropdown-group">
+                                                            <div class="dropdown-item"><label for="ny"
+                                                                    onclick="document.getElementById('city-dropdown-check').checked = false">New
+                                                                    York</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="la"
+                                                                    onclick="document.getElementById('city-dropdown-check').checked = false">Los
+                                                                    Angeles</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="ch"
+                                                                    onclick="document.getElementById('city-dropdown-check').checked = false">Chicago</label>
+                                                            </div>
+                                                            <div class="dropdown-item"><label for="sf"
+                                                                    onclick="document.getElementById('city-dropdown-check').checked = false">San
+                                                                    Francisco</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="chevron-down">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M4 6L8 10L12 6" stroke="#8E8E8E" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
